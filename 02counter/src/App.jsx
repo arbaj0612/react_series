@@ -5,21 +5,26 @@ import './App.css'
 
 function App() {
   
-  const [count , setCount] = useState(0)
+  const [count , setCount] = useState(15)
 
   const addValue = () => {
-    setCount(count + 1)
-    if(count == 20){
-      setCount(count)
-    }
+    // setCount(count + 1)
+    setCount( (prevCount) => prevCount + 1)
+    setCount( (prevCount) => prevCount + 1)
+    setCount( (prevCount) => prevCount + 1)
+    setCount( (prevCount) => prevCount + 1)
+    setCount( (prevCount) => prevCount + 1)
+    // if(count == 20){
+    //   setCount(count)
+    // }
     
   }
 
   const removeValue = () => {
     setCount(count - 1)
-    if(count == 0) {
-      setCount(count)
-    }
+    // if(count == 0) {
+    //   setCount(count)
+    // }
   }
 
   return (
