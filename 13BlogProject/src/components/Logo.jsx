@@ -1,9 +1,11 @@
 import React from 'react'
+import Logo123 from "../assets/blogimg-removebg-preview.png"
 
-function Logo({width = "100px"}) {
+
+function Logo() {
   return (
     <div>
-      logo
+    <img src={Logo123} alt="Logo img" style={{ width: "120px" }} />
     </div>
   )
 }
